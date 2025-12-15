@@ -1,15 +1,15 @@
-## \U0001f916 Project: Multi-robot
+## 🤖 Project: Multi-robot
 **Course: Robotics Lab**
 
 **Student: Leonardo Riccardi / P38000358**
 
 ---
 
-## \U0001f3af Project Objective
+## 🥅 Project Objective
 The goal is to simulate an active tracking system. On one side, we have the Fra2mo mobile robot, which executes a logistics task by navigating autonomously through the environment using SLAM and AMCL algorithms. On the other side, we have the KUKA iiwa 7 GDL manipulator acting as an active observer.
 ---
 
-## Build
+## ⛏️Build
 Clone this package in the `src` folder of your ROS 2 workspace.
 ```
 https://github.com/leonardoricc2002/Multi-robot.git
@@ -26,7 +26,7 @@ echo $GZ_SIM_RESOURCE_PATH
 source install/setup.bash
 ```
 
-# \U0001f680 HOW TO LAUNCH
+# 🚀 HOW TO LAUNCH
 Terminal 1. Launch the Gazebo world.
 ```
 ros2 launch Multi-robot warehouse.launch.py
@@ -41,7 +41,7 @@ Terminal 3. Activate Navigation
 source install/setup.bash
 ros2 launch Multi-robot navigation.launch.py
 ```
-#\U0001f579\ufe0f Tracking 
+# 🚀Tracking 
 
 Terminal 4. Iiwa follows fra2mo during its path.
 
@@ -54,7 +54,7 @@ Terminal 5. seeing fra2mo with iiwa camera during the trajectory
 source install/setup.bash
 ros2 run rqt_image_view rqt_image_view
 ```
-# \U0001f579\ufe0f Autonomus Navigation
+# 🚗Autonomus Navigation
 Terminal 6. With this command fra2mo goes to the target point,
 ```
 source install/setup.bash
