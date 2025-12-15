@@ -60,8 +60,8 @@ Terminal 6. With this command fra2mo goes to the target point,
 source install/setup.bash
 python3 src/Multi-robot/src/scripts/send_goal.py 
 ```
-## Configurazion
-If you want see only configurazion rviz2, after you launch gazebo world.
+## Configuration
+If you want see only configuration rviz2, after you launch gazebo world.
 Terminal 2. real-time configuration 
 ```
 source install/setup.bash
