@@ -19,7 +19,7 @@ Build and source the setup files
 colcon build
 ```
 ```
-export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(ros2 pkg prefix Multi-robot)/share/Multi-robot
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(ros2 pkg prefix multi-robot_project)/share/multi-robot_project
 ```
 ```
 echo $GZ_SIM_RESOURCE_PATH
@@ -29,17 +29,17 @@ source install/setup.bash
 ## 🚀 HOW TO LAUNCH
 Terminal 1. Launch the Gazebo world.
 ```
-ros2 launch Multi-robot warehouse.launch.py
+ros2 launch multi-robot_project warehouse.launch.py
 ```
 Terminal 2.Activate the slam
 ```
 source install/setup.bash
-ros2 launch Multi-robot slam.launch.py
+ros2 launch multi-robot_projectt slam.launch.py
 ```
 Terminal 3. Activate Navigation 
 ```
 source install/setup.bash
-ros2 launch Multi-robot navigation.launch.py
+ros2 launch multi-robot_project navigation.launch.py
 ```
 ## 🚀Tracking 
 
@@ -47,7 +47,7 @@ Terminal 4. Iiwa follows fra2mo during its path.
 
 ```
 source install/setup.bash
-python3 src/Multi-robot/src/scripts/tracking.py 
+python3 src/multi-robot_project/src/scripts/tracking.py 
 ```
 Terminal 5. seeing fra2mo with iiwa camera during the trajectory
 ```
@@ -58,16 +58,16 @@ ros2 run rqt_image_view rqt_image_view
 Terminal 6. With this command fra2mo goes to the target point,
 ```
 source install/setup.bash
-python3 src/Multi-robot/src/scripts/send_goal.py 
+python3 src/multi-robot_project/src/scripts/send_goal.py 
 ```
 ## Configuration
 If you want see only configuration rviz2, after you launch gazebo world.
 Terminal 2. real-time configuration 
 ```
 source install/setup.bash
-ros2 launch Multi_robot rviz.launch.py
+ros2 launch multi-robot_project rviz.launch.py
 ```
 Terminal 1. static configuration
 ```
-ros2 launch Multi_robot view_robots.launch.py 
+ros2 launch multi-robot_project view_robots.launch.py 
 ```
