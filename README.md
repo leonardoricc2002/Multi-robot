@@ -13,7 +13,7 @@ The goal is to simulate an active tracking system. On one side, we have the Fra2
 ## ⛏️Build
 Clone this package in the `src` folder of your ROS 2 workspace.
 ```
-https://github.com/leonardoricc2002/Multi-robot.git
+git clone https://github.com/leonardoricc2002/Multi-robot.git
 ```
 Build and source the setup files
 ```
