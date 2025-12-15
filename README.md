@@ -26,7 +26,7 @@ echo $GZ_SIM_RESOURCE_PATH
 source install/setup.bash
 ```
 
-# 🚀 HOW TO LAUNCH
+## 🚀 HOW TO LAUNCH
 Terminal 1. Launch the Gazebo world.
 ```
 ros2 launch Multi-robot warehouse.launch.py
@@ -41,7 +41,7 @@ Terminal 3. Activate Navigation
 source install/setup.bash
 ros2 launch Multi-robot navigation.launch.py
 ```
-# 🚀Tracking 
+## 🚀Tracking 
 
 Terminal 4. Iiwa follows fra2mo during its path.
 
@@ -54,13 +54,13 @@ Terminal 5. seeing fra2mo with iiwa camera during the trajectory
 source install/setup.bash
 ros2 run rqt_image_view rqt_image_view
 ```
-# 🚗Autonomus Navigation
+## 🚗Autonomus Navigation
 Terminal 6. With this command fra2mo goes to the target point,
 ```
 source install/setup.bash
 python3 src/Multi-robot/src/scripts/send_goal.py 
 ```
-# Configurazion
+## Configurazion
 If you want see only configurazion rviz2, after you launch gazebo world.
 Terminal 2. real-time configuration 
 ```
