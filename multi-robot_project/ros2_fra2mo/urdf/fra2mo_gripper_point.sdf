@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="fra2mo_gripper_point">
+    <link name="logic_link">
+      <inertial>
+        <mass>0.0001</mass>
+        <inertia>
+          <ixx>0.000001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000001</iyy>
+          <iyz>0</iyz>
+          <izz>0.000001</izz>
+        </inertia>
+      </inertial>
+
+      <plugin filename="libignition-gazebo-detachable-joint-system.so"
+              name="ignition::gazebo::systems::DetachableJoint">
+        <parent_link>fra2mo::basket_link</parent_link>
+        <child_model>green_box</child_model>
+        <child_link>fra2mo_box_attachment_link</child_link>
+        <topic>/fra2mo/gripper/grasp</topic>
+        <max_gap>1.0</max_gap>
+        <min_gap>0.005</min_gap>
+      </plugin>
+    </link>
+  </model>
+</sdf>
