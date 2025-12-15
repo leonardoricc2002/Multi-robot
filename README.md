@@ -20,6 +20,7 @@ Build and source the setup files
 colcon build
 ```
 ```
+colcon build --packages-select multi-robot_projec
 export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$(ros2 pkg prefix multi-robot_project)/share/multi-robot_project
 ```
 ```
