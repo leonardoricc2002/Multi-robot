@@ -49,7 +49,7 @@ Terminal 4. Iiwa follows fra2mo during its path.
 
 ```
 source install/setup.bash
-python3 src/multi-robot_project/src/scripts/tracking.py 
+python3 src/Multi-robot/multi-robot_project/src/scripts/tracking.py
 ```
 Terminal 5. seeing fra2mo with iiwa camera during the trajectory
 ```
@@ -60,7 +60,7 @@ ros2 run rqt_image_view rqt_image_view
 Terminal 6. With this command fra2mo goes to the target point,
 ```
 source install/setup.bash
-python3 src/multi-robot_project/src/scripts/send_goal.py 
+python3 src/Multi-robot/multi-robot_project/src/scripts/send_goal.py 
 ```
 ## Configuration
 If you want see only configuration rviz2, after you launch gazebo world.
