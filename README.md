@@ -36,7 +36,7 @@ ros2 launch multi-robot_project warehouse.launch.py
 Terminal 2.Activate the slam
 ```
 source install/setup.bash
-ros2 launch multi-robot_projectt slam.launch.py
+ros2 launch multi-robot_project slam.launch.py
 ```
 Terminal 3. Activate Navigation 
 ```
