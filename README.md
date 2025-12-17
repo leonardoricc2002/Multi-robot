@@ -9,6 +9,13 @@
 
 The goal is to simulate an active tracking system. On one side, we have the Fra2mo mobile robot, which executes a logistics task by navigating autonomously through the environment using SLAM and AMCL algorithms. On the other side, we have the KUKA iiwa 7 GDL manipulator acting as an active observer.
 
+# 🛠️ Prerequisites
+To compile and run the project, it is necessary to have the essential dependencies for SLAM and navigation
+
+```bash
+sudo apt update
+sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-slam-toolbox
+```
 
 ## ⛏️Build
 Clone this package in the `src` folder of your ROS 2 workspace.
